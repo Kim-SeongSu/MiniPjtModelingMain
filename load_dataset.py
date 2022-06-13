@@ -1,9 +1,10 @@
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-train = pd.read_csv('./data/train_mini_pjt.csv')
-test = pd.read_csv('./data/test_V2.csv')
+def load_dataset(csv_name):
+  if csv_name == './data/train_mini_pjt.csv':
+    train = pd.read_csv(csv_name)
+    return train
 
-print(train.info(),'\n',test.info())
+  elif csv_name == './data/test_V2.csv':
+    test = pd.read_csv(csv_name)
+    return test
