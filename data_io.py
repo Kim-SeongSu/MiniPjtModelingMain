@@ -5,5 +5,4 @@ def load_dataset(csv_name):
      df = pd.read_csv(csv_name)
    except:
      print("csv파일의 위치를 입력하세요!")
-   
    return df
